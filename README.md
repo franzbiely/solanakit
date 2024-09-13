@@ -34,3 +34,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+### How to create a Solana Keypair
+
+1. Install Solana CLI
+```bash
+sh -c "$(curl -sSfL https://release.anza.xyz/stable/install)"
+```
+2. Create a new keypair
+```bash
+solana-keygen grind --starts-with dev:1
+```
+3. Ask for Airdrop // WIP
+```base
+solana --url devnet airdrop 1 3KXpfiRF9AgDnG5GKxQ9a4bVr6HKXupzMnc22HKHh9hn
+```
