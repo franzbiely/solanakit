@@ -45,9 +45,25 @@ sh -c "$(curl -sSfL https://release.anza.xyz/stable/install)"
 ```
 2. Create a new keypair
 ```bash
-solana-keygen grind --starts-with dev:1
+solana-keygen grind --starts-with dev:1 
+
 ```
-3. Ask for Airdrop // WIP
+3. Set as default solana keypair
+```bash
+solana config set --keypair key8FLEejBBRFUQE1vgETB3KBRSrJ887eq8SxJSb7Yh.json
+```
+4. Check if in devnet
+```bash
+solana config get
+```
+5. Change to devnet
+```
+bash
+solana config set -ud
+// Then set the keypair of the RYORI devnet key: 
+solana config set --keypair _defaultryori-solanakeypair.json
+```
+6. Ask for Airdrop // WIP
 ```base
 solana --url devnet airdrop 1 3KXpfiRF9AgDnG5GKxQ9a4bVr6HKXupzMnc22HKHh9hn
 ```
